@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MoveViewAlongPath" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fst-gK-NHK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="439"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="439" id="vK0-VN-7zV"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="goForwardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VeR-8Q-vOy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leW-J5-Qjv">
+                                <rect key="frame" x="220" y="516" width="91" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="3tz-9D-dAs"/>
+                                    <constraint firstAttribute="height" constant="30" id="giw-x2-fOH"/>
+                                </constraints>
+                                <state key="normal" title="Go Backward"/>
+                                <connections>
+                                    <action selector="goBackwardTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eXc-zD-rZ5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasbeeh Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kos-nT-UEt">
+                                <rect key="frame" x="126" y="556" width="123" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bead" translatesAutoresizingMaskIntoConstraints="NO" id="POA-Yh-jf9">
+                                <rect key="frame" x="-1" y="162" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bead" translatesAutoresizingMaskIntoConstraints="NO" id="CkU-fX-XNB">
+                                <rect key="frame" x="349" y="173" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bead" translatesAutoresizingMaskIntoConstraints="NO" id="4by-CZ-0Ae">
+                                <rect key="frame" x="44" y="141" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTA-N4-6Db">
+                                <rect key="frame" x="144.5" y="25" width="86" height="47"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total = 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGE-uQ-cK7">
+                                <rect key="frame" x="154" y="75" width="67" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gtq-Nt-uaj">
+                                <rect key="frame" x="41" y="516" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Settings"/>
+                                <connections>
+                                    <action selector="changeSetting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M5Q-bg-umW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmX-hh-Cv7">
+                                <rect key="frame" x="139" y="608" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset Counter"/>
+                                <connections>
+                                    <action selector="restTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kwd-65-4zD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lGE-uQ-cK7" firstAttribute="top" secondItem="BTA-N4-6Db" secondAttribute="bottom" constant="3" id="5rI-sT-0Wb"/>
+                            <constraint firstItem="kos-nT-UEt" firstAttribute="top" secondItem="leW-J5-Qjv" secondAttribute="bottom" constant="10" id="80L-JR-Fcb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="leW-J5-Qjv" secondAttribute="trailing" constant="48" id="Lp5-T7-084"/>
+                            <constraint firstItem="lGE-uQ-cK7" firstAttribute="centerX" secondItem="BTA-N4-6Db" secondAttribute="centerX" id="PJQ-om-A9U"/>
+                            <constraint firstItem="kos-nT-UEt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RDr-Ia-Kid"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kos-nT-UEt" secondAttribute="bottom" constant="90" id="Tss-aR-7Io"/>
+                            <constraint firstItem="BTA-N4-6Db" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bsi-6B-kcf"/>
+                            <constraint firstAttribute="trailing" secondItem="fst-gK-NHK" secondAttribute="trailing" id="jo3-AE-Lev"/>
+                            <constraint firstItem="BTA-N4-6Db" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="lE3-tT-rIl"/>
+                            <constraint firstItem="fst-gK-NHK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uvk-eE-o7J"/>
+                            <constraint firstItem="fst-gK-NHK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zje-nC-Xqt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="allTotal" destination="lGE-uQ-cK7" id="d7R-4u-FuZ"/>
+                        <outlet property="bead1" destination="POA-Yh-jf9" id="occ-FA-KHc"/>
+                        <outlet property="bead2" destination="4by-CZ-0Ae" id="x9k-tT-X2Z"/>
+                        <outlet property="bead3" destination="CkU-fX-XNB" id="sag-ir-ozD"/>
+                        <outlet property="lblCounter" destination="BTA-N4-6Db" id="2g2-Zp-eKu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bead" width="65" height="65"/>
+    </resources>
+</document>
